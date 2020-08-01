@@ -1,0 +1,577 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    height: 100vh;
+
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+.section-title {
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1vh;
+    font-size: 3em;
+    font-weight: 900;
+    border-bottom: 1px solid gray;
+}
+
+.opening { 
+    position: relative;
+    height: 100vh;
+    background-image: url("images/Shanghai.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/*NAVIGATION BAR START*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between ;
+    padding: 30px;
+}
+
+.left-side {    
+    display: flex;
+    
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    padding-left: 2vw;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    color: black;
+}
+
+.nav-link-wrapper a:hover {
+    padding-bottom: 6px;
+    border-bottom: solid 1px #F5BD7E;
+    color: #F5BD7E;
+}
+
+.brand {
+    margin-right: 10px;
+    color: white;
+}
+/*NAVIGATION BAR END*/
+
+.title { /*SHEN WEI'S PORTFOLIO*/
+    position: absolute;
+    font-size: 3vw;
+    color: white;
+    width: 30vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+/*INTRODUCTION SECTION STARTS*/
+.introduction {
+    padding: 15rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headings {
+    width: 75vw;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.intro-text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#pu {
+    text-decoration: none;
+    color: black;
+    transition: ease-in 300ms;
+}
+
+#pu:hover {
+    color: #d6974e;
+    opacity: 0.6;
+    transition: ease-in 300ms;
+}
+
+/*INTRODUCTION SECTION ENDS*/
+
+/*PROFILE SECTION STARTS*/
+.profile {
+    padding-bottom: 10em;
+    background-color: #F0F0F0;
+}
+
+.profile-content {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.about-me {
+    width: 40vw;
+    margin: 0 8vw;
+    height: 75vh;
+
+}
+
+.about-me-title {
+    padding: 2vh;
+    font-size: 2em;
+    text-align: center;
+}
+
+.description-text {
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+.my-skills-title {
+    padding: 2vh;
+    font-size: 2em;
+    text-align: center;
+}
+
+.skills-container {
+    height: 35vh;
+    display: flex;
+}
+
+.col-1 {
+
+    width: 45%;
+    padding-right: 3.5vw;
+}
+
+.col-2 {
+    width: 50%;
+    padding-left: 0.5vw;
+}
+
+.skill {
+    padding: 2vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    border: #d8d8d8 2px solid;
+    background: #d8d8d8;
+    width: 12vw;
+    border-radius: 12px;
+    text-align: end;
+}
+
+
+.rating-percentage {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(45deg, transparent, #F5BD7E);
+    border-radius: 12px;
+    transition: ease-in-out 4s;
+}
+
+.bio {
+    width: 18vw;
+}
+
+.picture-self {
+    width: 18vw;
+}
+
+.personal-detail-container {
+    border: #E3E4E4 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom-left-radius: 20px;
+}
+
+.personal-detail {
+    padding: 2vh 1vw;
+    border-bottom: 1px #E3E4E4 solid;
+    width: 15vw;
+
+}
+
+.last {
+    border: none;
+}
+
+/* EXPERIENCES SECTION START */
+
+.experiences {
+    width: 100%;
+    background-color: #1A1E23;
+    color: white;
+}
+
+.experiences-container {
+    width: 55%;
+    margin: 4rem auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+.experience-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.experience-images {
+    width: 95%;
+    border-radius: 2rem;
+}
+
+@media(max-width: 900px) {
+    .experience-card {
+        display: block;
+    }
+}
+
+/*GET IN TOUCH SECTION STARTS*/
+.get-in-touch {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 8rem;
+}
+
+.info-and-hire-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80%;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 3em;
+}
+
+.contact-info {
+    padding-left: 4em;
+}
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.linkedin {
+    background-image: url(Images/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.facebook {
+    background-image: url(Images/facebook.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.email {
+    background-image: url("Images/mail.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.phone-and-address-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding: 3em    ;
+}
+
+.phone {
+    background-image: url("Images/phone.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.phone-text {
+    margin: 1em;
+}
+
+.address {
+    background-image: url("Images/map.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.address-text {
+    margin: 1em;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    height: 0;
+}
+
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.hire-me {
+    display: flex;
+}
+
+.email-card {
+    height: 85%;
+    width: 85%;
+    margin: auto;
+    box-shadow: 6px 8px 25px -4px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+form {
+    margin-top: 50px;
+    transition: all 2s ease-in-out;
+    overflow: hidden;
+    position: absolute;
+    top: 5em;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control {
+    width: 60%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit {
+    background-color: #1A1E23;
+    color: white;
+    padding: 1em;
+}
+
+
+@media (max-width: 900px) {
+    .info-and-hire-container {
+        display: block;
+    }
+    .phone-and-address-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}
+/*FOOTER START*/
+
+footer {
+    background-color: #1A1E23;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+/* THE BEGINNING OF THE JOURNEY */
+/* .my-journey {
+    background-color: #F0F0F0;
+}
+
+.my-journey-title-container {
+    padding: 30px 0;
+    font-size: 2vw;
+
+}
+
+.my-journey-title {
+    text-align: center;
+} */
+
+/*THE BEGINNING OF TIMELINE*/
+
+/* .timeline-container {
+    position: relative;
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+
+.event-years {
+    display: inline-block;
+    position: absolute;
+    font-size: 2vw;
+    padding: 0;
+}
+
+/*THE BLACK LINE*/
+/* .event-years::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0.5vw;
+    background-color: white;
+    border: 0.1vw solid white;
+    border-radius: 12px;
+    left: -3px;
+
+}  */
+
+/*THE DOTS*/
+/* .li-year::before {
+    content: '';
+    position: absolute;
+    height: 3vh;
+    width: 1.5vw;
+    background-color: #17252A;
+    border-radius: 50%;
+    left: -.68vw;
+    margin-top: 8px;
+    border: 2px #3AAFA9 solid;
+}
+
+.li-year {
+    padding: 3.5vh;
+    list-style-type: none;
+    width: 1vw;
+}
+
+.year {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: ease-out 150ms;
+}
+
+.year:hover {
+    background-color: #E9E9E9;
+    border-radius: 12px;
+    padding: 0.3vw;
+    transition: ease-in 150ms;
+}
+
+ul li.active-year a {
+    background-color: #E9E9E9;
+    border-radius: 12px;
+    padding: 0.3vw;
+} */
+
+
+/*THE BEGINNING OF EVENTS (RIGHT OF TIMELINE)*/
+
+
+/* .events-content {
+   border: 2px solid red ;
+   width: 60vw;
+}
+
+.event {
+    display: none;
+}
+
+.active-event {
+    display: block;
+} */
+
+/*THE BEGINNING OF CONTACT ME SECTION*/
+
+/* .contact-me-title{
+    border: 2px solid black;
+    text-align: center;
+}
+
+.contact-me-container {
+    display: flex;
+    height: 50vh;
+    border: 2px solid black;
+}
+
+.details {
+    width: 50vw;
+    border: 2px solid red;
+}
+
+.hire-me {
+    width: 50vw;
+    border: 2px solid green;
+} */
